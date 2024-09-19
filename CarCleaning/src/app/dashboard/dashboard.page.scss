@@ -1,0 +1,119 @@
+
+.header-toolbar {
+  .dropdown {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;  // Adds the white border
+    padding: 6px 10px;          // Adds some padding inside the dropdown area
+    border-radius: 4px;         // Optional: Adds rounded corners
+    margin-right: 10px;         // Adds space between the dropdown and the edge
+
+    .dropdown-button {
+      display: flex;
+      align-items: center;
+      padding: 0;  // Remove default padding from ion-button
+      background-color: transparent; // Make the button background transparent
+      box-shadow: none;  // Remove shadow from ion-button
+    }
+
+    ion-icon {
+      margin-right: 5px;  // Space between icon and text
+      color: #ffffff;      // Icon color
+    }
+
+    .dropdown-icon {
+      margin-left: 5px;    // Space between text and chevron-down icon
+      color: #ffffff;      // Chevron-down icon color
+    }
+
+    span {
+      color: #ffffff;      // Text color for the car type (Hatchback)
+      font-size: 16px;
+    }
+  }
+}
+
+.banner-card {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner-card img {
+  width: 100%;
+}
+
+.banner-card ion-card-header {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-align: left;
+}
+
+.banner-card ion-badge {
+  margin-top: 10px;
+}
+
+.offer-card {
+  color: black;
+  text-align: left;
+  padding: 0px;
+  font-family: Inter;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.offer-card ion-card-content {
+  font-size: 14px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.new-price {
+  font-weight: bold;
+  color: #28a745;
+  margin-left: 10px;
+}
+
+.service-card {
+  margin-top: 20px;
+}
+
+.service-card ion-img {
+  width: 100px;
+  display: flex;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.service-card ion-card-header {
+  padding: 15px;
+}
+
+.service-card ion-card-subtitle {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ion-segment {
+  margin: 10px 0;
+  
+}
+
+ion-segment-button {
+  --color-checked: #28a745;
+  
+}
+
+ion-segment-button ion-label {
+  color: #000;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
