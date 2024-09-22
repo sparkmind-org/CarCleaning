@@ -39,5 +39,11 @@
 // Import Bootstrap SCSS
 @import 'node_modules/bootstrap/scss/bootstrap';
 
+.car-selection-modal {
+   --height: 40%;
+   --width: 50%;
+   --border-radius: 10px;
+ }
+
 
 

@@ -27,6 +27,34 @@
       }
   }
 }
+/* car-selection.component.scss */
+#car-selection-modal {
+  ion-label {
+    display: block;
+    text-align: center;
+    color: #707070;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  .car-option {
+    text-align: center;
+    padding: 10px;
+  }
+
+  ion-img {
+    max-width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 10px;
+  }
+
+  ion-button {
+    margin-top: 20px;
+    --background: #28a745;  // green confirm button
+  }
+}
+
 
 .banner-card {
   position: relative;

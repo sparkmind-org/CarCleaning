@@ -2,14 +2,14 @@
   <ion-toolbar color="dark" class="header-toolbar">
       <!-- Custom Back Button -->
 
-      <ion-buttons slot="start">
+      <ion-buttons slot="start" >
           <ion-button class="custom-back-button">
               <ion-icon src="assets/BackButton.svg" slot="icon-only"></ion-icon>
           </ion-button>
       </ion-buttons>
       <ion-title>Car Cleaning</ion-title>
       <ion-buttons slot="end">
-          <div class="dropdown">
+          <div class="dropdown" (click)="presentModal()">
               <ion-icon src="assets/Car.svg"></ion-icon>
               <span>Hatchback</span>
               <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>

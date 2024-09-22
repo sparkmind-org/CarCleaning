@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Select Car Type</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="4" class="car-option" (click)="selectCarType('Hatchback')">
+        <ion-img src="assets/Car img.svg"></ion-img>
+        <ion-label>Hatchback</ion-label>
+      </ion-col>
+      <ion-col size="4" class="car-option" (click)="selectCarType('Sedan')">
+        <ion-img src="assets/Car img.svg"></ion-img>
+        <ion-label>Sedan</ion-label>
+      </ion-col>
+      <ion-col size="4" class="car-option" (click)="selectCarType('SUV')">
+        <ion-img src="assets/Car img.svg"></ion-img>
+        <ion-label>SUV</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-footer>
+    <ion-button expand="block" (click)="closeModal()">Close</ion-button>
+  </ion-footer>
+</ion-content>
