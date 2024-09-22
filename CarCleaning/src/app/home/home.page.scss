@@ -1,0 +1,59 @@
+.header-toolbar {
+   .dropdown {
+       display: flex;
+       align-items: center;
+       border: 1px solid #ffffff; // Adds the white border
+       padding: 6px 10px; // Adds some padding inside the dropdown area
+       border-radius: 4px; // Optional: Adds rounded corners
+       margin-right: 10px; // Adds space between the dropdown and the edge
+       .dropdown-button {
+           display: flex;
+           align-items: center;
+           padding: 0; // Remove default padding from ion-button
+           background-color: transparent; // Make the button background transparent
+           box-shadow: none; // Remove shadow from ion-button
+       }
+       ion-icon {
+           margin-right: 5px; // Space between icon and text
+           color: #ffffff; // Icon color
+       }
+       .dropdown-icon {
+           margin-left: 5px; // Space between text and chevron-down icon
+           color: #ffffff; // Chevron-down icon color
+       }
+       span {
+           color: #ffffff; // Text color for the car type (Hatchback)
+           font-size: 16px;
+       }
+   }
+ }
+
+
+ion-card {
+   border: 1px solid #a6a6a6;
+   border-radius: 12px;
+ }
+ 
+ .line-through {
+   text-decoration: line-through;
+   color: #a6a6a6;
+ }
+ 
+
+ ion-card-header ion-card-title {
+   font-weight: bold;
+   color: black;
+ }
+ 
+ ion-card-subtitle {
+   color: #c6c4c3;
+ }
+ 
+ ion-button {
+   --border-radius: 20px;
+ }
+ 
+ ion-list ion-item[color="warning"] {
+   color: gold;
+ }
+ 

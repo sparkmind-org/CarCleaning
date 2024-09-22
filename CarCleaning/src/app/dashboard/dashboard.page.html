@@ -1,19 +1,20 @@
 <ion-header>
   <ion-toolbar color="dark" class="header-toolbar">
-    <!-- Custom Back Button -->
-    <ion-buttons slot="start">
-      <ion-button class="custom-back-button">
-        <ion-icon src="assets/BackButton.svg" slot="icon-only"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>Car Cleaning</ion-title>
-    <ion-buttons slot="end">
-      <div class="dropdown">
-      <ion-icon src="assets/Car.svg"></ion-icon>
-      <span>Hatchback</span>
-      <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
-    </div>
-    </ion-buttons>
+      <!-- Custom Back Button -->
+
+      <ion-buttons slot="start">
+          <ion-button class="custom-back-button">
+              <ion-icon src="assets/BackButton.svg" slot="icon-only"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+      <ion-title>Car Cleaning</ion-title>
+      <ion-buttons slot="end">
+          <div class="dropdown">
+              <ion-icon src="assets/Car.svg"></ion-icon>
+              <span>Hatchback</span>
+              <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
+          </div>
+      </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -21,69 +22,105 @@
 
   <!-- Tab Navigation -->
   <ion-segment value="recommended">
-    <ion-segment-button value="recommended">
-      <ion-icon src="assets/Star1.svg" class="icon"></ion-icon>
-      <ion-label>Recommended</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="special-care">
-      <ion-icon name="water"></ion-icon>
-      <ion-label>Special Care</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="interior">
-      <ion-icon name="water-outline"></ion-icon>
-      <ion-label>Interior</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="accessories">
-      <ion-icon name="settings-outline"></ion-icon>
-      <ion-label>Accessories</ion-label>
-    </ion-segment-button>
+      <ion-segment-button value="recommended">
+          <ion-icon src="assets/Star1.svg" class="icon"></ion-icon>
+          <ion-label>Recommended</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="special-care">
+          <ion-icon name="water"></ion-icon>
+          <ion-label>Special Care</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="interior">
+          <ion-icon src="assets/Interiror.svg"></ion-icon>
+          <ion-label>Interior</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="accessories">
+          <ion-icon src="assets/Accessories.svg"></ion-icon>
+          <ion-label>Accessories</ion-label>
+      </ion-segment-button>
   </ion-segment>
 
   <!-- Main Banner Section -->
   <ion-card class="banner-card">
-    <img src="assets/banner.svg" alt="Complete Cleanse Combo">
-    <ion-card-header>
-      <ion-card-title>Complete Cleanse Combo</ion-card-title>
-      <ion-card-subtitle>
-        Exterior Foam Wash<br>Interior Vacuuming & Polish<br>Underbody Cleaning
-      </ion-card-subtitle>
-      <ion-badge color="primary">Bonus Body Wax</ion-badge>
-    </ion-card-header>
+      <img src="assets/banner.svg" alt="Complete Cleanse Combo">
+      <ion-card-header class="banner-text">
+          <ion-card-title><b style="font-size: 5vw;">Complete Cleanse Combo</b></ion-card-title>
+          <ion-card-subtitle style="color: aliceblue;">
+              <p>Exterior Foam Wash<br>Interior Vacuuming & Polish<br>Underbody Cleaning</p>
+          </ion-card-subtitle>
+
+          <ion-badge color="primary" class="container bonus-card" style="margin-top: 53px;
+  margin-left: 4px; width: 20vw;">
+              <p>Bonus Body Wax </p>
+          </ion-badge>
+      </ion-card-header>
   </ion-card>
 
   <!-- Rating & Offer -->
   <ion-grid>
-    <ion-row>
-      <ion-col size="6">
-        <ion-item lines="none">
-          <ion-icon name="star"></ion-icon>
-          <ion-label>4.6 (35K+ bookings)</ion-label>
-        </ion-item>
-      </ion-col>
-      <ion-col size="">
-        <ion-card class="offer-card">
-          <ion-card-content>
-            ₹100 OFF on First Booking<br>
-            <small>Use Code: <b>CARWASH</b></small>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
+      <ion-row>
+          <ion-col size="6">
+              <ion-item lines="none">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-label>4.6 (35K+ bookings)</ion-label>
+              </ion-item>
+          </ion-col>
+          <ion-col size="12">
+              <ion-card class="offer-card">
+
+                  <ion-card-content>
+                    <ion-icon class="offIcon" src="assets/Frame.svg"></ion-icon>
+                      ₹100 OFF on First Booking<br>
+                      <small>Use Code: <b>CARWASH</b></small>
+                  </ion-card-content>
+              </ion-card>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+
+  <!-- checking -->
+  <ion-grid>
+      <ion-card class="offer-card ">
+
+          <ion-row>
+
+              <ion-col size="6">
+                  <!-- <ion-item lines="none">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-label>4.6 (35K+ bookings)</ion-label>
+              </ion-item> -->
+                  <ion-card-title style="padding-left: 10px;">Complete Cleanse Combo</ion-card-title>
+                  <ion-card-subtitle>
+                      <span class="old-price" style="padding-left: 10px;">₹999</span>
+                      <span class="new-price" style="padding-left: 10px;">₹599</span>
+                  </ion-card-subtitle>
+                  <ion-card-content>
+                      90 Mins<br>Exterior foam wash<br>Interior vacuuming
+                  </ion-card-content>
+
+              </ion-col>
+              <ion-col size="6">
+                  <ion-img src="assets/Rectangle 10.png" style="width: 100px; float: right; padding-right: 20px;"></ion-img>
+              </ion-col>
+
+          </ion-row>
+      </ion-card>
+
   </ion-grid>
 
   <!-- Service Card -->
-  <ion-card class="service-card">
-    <ion-img src="assets/Rectangle 10.png"></ion-img>
-    <ion-card-header>
-      <ion-card-title>Complete Cleanse Combo</ion-card-title>
-      <ion-card-subtitle>
-        <span class="old-price">₹999</span>
-        <span class="new-price">₹599</span>
-      </ion-card-subtitle>
-      <ion-card-content>
-        90 Mins<br>Exterior foam wash<br>Interior vacuuming
-      </ion-card-content>
-    </ion-card-header>
-  </ion-card>
+  <!-- <ion-card class="service-card row">
+
+      <ion-card-header>
+          <ion-card-title>Complete Cleanse Combo</ion-card-title>
+          <ion-card-subtitle>
+              <span class="old-price">₹999</span>
+              <span class="new-price">₹599</span>
+          </ion-card-subtitle>
+          <ion-card-content>
+              90 Mins<br>Exterior foam wash<br>Interior vacuuming
+          </ion-card-content>
+      </ion-card-header>
+  </ion-card> -->
 
 </ion-content>

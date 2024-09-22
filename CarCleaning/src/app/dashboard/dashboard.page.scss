@@ -1,35 +1,30 @@
-
 .header-toolbar {
   .dropdown {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ffffff;  // Adds the white border
-    padding: 6px 10px;          // Adds some padding inside the dropdown area
-    border-radius: 4px;         // Optional: Adds rounded corners
-    margin-right: 10px;         // Adds space between the dropdown and the edge
-
-    .dropdown-button {
       display: flex;
       align-items: center;
-      padding: 0;  // Remove default padding from ion-button
-      background-color: transparent; // Make the button background transparent
-      box-shadow: none;  // Remove shadow from ion-button
-    }
-
-    ion-icon {
-      margin-right: 5px;  // Space between icon and text
-      color: #ffffff;      // Icon color
-    }
-
-    .dropdown-icon {
-      margin-left: 5px;    // Space between text and chevron-down icon
-      color: #ffffff;      // Chevron-down icon color
-    }
-
-    span {
-      color: #ffffff;      // Text color for the car type (Hatchback)
-      font-size: 16px;
-    }
+      border: 1px solid #ffffff; // Adds the white border
+      padding: 6px 10px; // Adds some padding inside the dropdown area
+      border-radius: 4px; // Optional: Adds rounded corners
+      margin-right: 10px; // Adds space between the dropdown and the edge
+      .dropdown-button {
+          display: flex;
+          align-items: center;
+          padding: 0; // Remove default padding from ion-button
+          background-color: transparent; // Make the button background transparent
+          box-shadow: none; // Remove shadow from ion-button
+      }
+      ion-icon {
+          margin-right: 5px; // Space between icon and text
+          color: #ffffff; // Icon color
+      }
+      .dropdown-icon {
+          margin-left: 5px; // Space between text and chevron-down icon
+          color: #ffffff; // Chevron-down icon color
+      }
+      span {
+          color: #ffffff; // Text color for the car type (Hatchback)
+          font-size: 16px;
+      }
   }
 }
 
@@ -62,6 +57,7 @@
   font-family: Inter;
   border-radius: 10px;
   font-weight: bold;
+  width: 100%;
 }
 
 .offer-card ion-card-content {
@@ -101,19 +97,67 @@
 
 ion-segment {
   margin: 10px 0;
-  
 }
 
 ion-segment-button {
   --color-checked: #28a745;
-  
 }
 
 ion-segment-button ion-label {
   color: #000;
-font-family: Inter;
-font-size: 10px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.banner-text p {
+  text-indent: 0;
+  text-align: left;
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  font-size: 2vw;
+}
+
+.banner-text {
+  position: absolute;
+  top: 1px;
+  /* font-size: 3vw; */
+  /* font-weight: bold; */
+  padding: 20px;
+  color: rgb(249, 237, 237);
+  font-size: 5vw;
+}
+
+.bonus-card {
+  /* margin: 0; */
+  // margin-left: 3vw;
+  /* padding-left: 3vw; */
+  background-color: black;
+  color: white;
+  /* width: 45%; */
+  top: 35%;
+  border-radius: 20px;
+  justify-content: left;
+}
+.bonus-card p {
+  text-align: center;
+}
+
+.container .bonus-card {
+  margin: 10vw 0vw 0vw 3vw;
+  width: 35%;
+  position: absolute;
+  /* justify-content: center; */
+  align-content: center;
+  text-align: left;
+  align-items: center;
+}
+
+
+.container {
+  // width: 30vw;
+  height: auto;
 }
