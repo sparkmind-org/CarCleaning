@@ -39,11 +39,21 @@
 // Import Bootstrap SCSS
 @import 'node_modules/bootstrap/scss/bootstrap';
 
-.car-selection-modal {
-   --height: 40%;
-   --width: 50%;
-   --border-radius: 10px;
+@media (max-width: 480px) {
+   .modal-container {
+     max-width: 90%; /* Make sure it doesn’t take up full width on small devices */
+     width: auto; /* Auto width based on content */
+     height: auto; /* Auto height to prevent stretching */
+     max-height: 70vh; /* Restrict height to 70% of the viewport height */
+     overflow-y: auto; /* Enable scrolling if content exceeds available height */
+   }
+ 
+   /* Make sure the close button adjusts its position correctly */
+   .close-button {
+     top: -12px;
+     right: -12px;
+   }
  }
-
+ 
 
 

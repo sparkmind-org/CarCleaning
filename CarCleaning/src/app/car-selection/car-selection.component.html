@@ -1,33 +1,41 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Select Car Type</ion-title>
-    <ion-buttons slot="end">
-      <ion-button (click)="closeModal()">
-        <ion-icon name="close"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content class="ion-padding">
+
+
+  <ion-button fill="clear" class="close-button" (click)="closeModal()" aria-label="Close Modal">
+    <ion-icon name="close-outline"></ion-icon>
+  </ion-button>
+  
+  <div class="modal-container">
+    <ion-title class="modal-title">Select Car Type</ion-title>
+    <div class="divider"></div>
+
   <ion-grid>
     <ion-row class="ion-justify-content-center">
       <ion-col size="4" class="car-option" (click)="selectCarType('Hatchback')">
+        <ion-card  class="car-card">
         <ion-img src="assets/Car img.svg"></ion-img>
-        <ion-label>Hatchback</ion-label>
+      </ion-card>
+        <ion-label class="car-label">Hatchback</ion-label>
       </ion-col>
       <ion-col size="4" class="car-option" (click)="selectCarType('Sedan')">
+        <ion-card class="car-card">
         <ion-img src="assets/Car img.svg"></ion-img>
-        <ion-label>Sedan</ion-label>
+      </ion-card>
+        <ion-label class="car-label">Sedan</ion-label>
       </ion-col>
       <ion-col size="4" class="car-option" (click)="selectCarType('SUV')">
+        <ion-card class="car-card">
         <ion-img src="assets/Car img.svg"></ion-img>
-        <ion-label>SUV</ion-label>
+      </ion-card>
+        <ion-label class="car-label">SUV</ion-label>
       </ion-col>
     </ion-row>
   </ion-grid>
 
   <ion-footer>
-    <ion-button expand="block" (click)="closeModal()">Close</ion-button>
+    <ion-button expand="block" class="confirm-button" (click)="closeModal()">Close</ion-button>
   </ion-footer>
+  </div>
 </ion-content>
