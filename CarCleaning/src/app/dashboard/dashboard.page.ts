@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { CarSelectionComponent } from '../car-selection/car-selection.component';  // Import the modal component
-
+import { CarPopupComponent } from '../car-popup/car-popup.component';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.page.html',
@@ -24,6 +24,13 @@ export class DashboardPage implements OnInit {
       }
     });
 
+    return await modal.present();
+  }
+  async openPopup() {
+    const modal = await this.modalCtrl.create({
+      component: CarPopupComponent,
+      cssClass: 'custom-modal-class'
+    });
     return await modal.present();
   }
   ngOnInit() {

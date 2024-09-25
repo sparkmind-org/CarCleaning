@@ -21,24 +21,34 @@
 <ion-content>
 
   <!-- Tab Navigation -->
-  <ion-segment value="recommended">
-      <ion-segment-button value="recommended">
-          <ion-icon src="assets/Star1.svg" class="icon"></ion-icon>
-          <ion-label>Recommended</ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="special-care">
-          <ion-icon name="water"></ion-icon>
-          <ion-label>Special Care</ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="interior">
-          <ion-icon src="assets/Interiror.svg"></ion-icon>
-          <ion-label>Interior</ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="accessories">
-          <ion-icon src="assets/Accessories.svg"></ion-icon>
-          <ion-label>Accessories</ion-label>
-      </ion-segment-button>
-  </ion-segment>
+  <!-- Scrollable Segment -->
+  <ion-segment value="recommended" scrollable>
+    <ion-segment-button value="recommended">
+        <ion-icon src="assets/Star1.svg" class="icon"></ion-icon>
+        <ion-label>Recommended</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="special-care">
+        <ion-icon name="water"></ion-icon>
+        <ion-label>Special Care</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="interior">
+        <ion-icon src="assets/Interiror.svg"></ion-icon>
+        <ion-label>Interior</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="accessories">
+        <ion-icon src="assets/Accessories.svg"></ion-icon>
+        <ion-label>Accessories</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="combos">
+        <ion-icon src="assets/Combos.svg"></ion-icon>
+        <ion-label>Combos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="exterior">
+        <ion-icon src="assets/Exterior.svg"></ion-icon>
+        <ion-label>Exterior</ion-label>
+    </ion-segment-button>
+    
+    </ion-segment>
 
   <!-- Main Banner Section -->
   <ion-card class="banner-card">
@@ -50,7 +60,7 @@
           </ion-card-subtitle>
 
           <ion-badge color="primary" class="container bonus-card" style="margin-top: 53px;
-  margin-left: 4px; width: 20vw;">
+  margin-left: 4px; width: 20vw;" (click)="openPopup()">
               <p>Bonus Body Wax </p>
           </ion-badge>
       </ion-card-header>

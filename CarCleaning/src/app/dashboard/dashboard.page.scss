@@ -125,17 +125,26 @@
 
 ion-segment {
   margin: 10px 0;
+  overflow-x: auto;     // Allow horizontal scrolling
+  white-space: nowrap;  // Prevent wrapping of segment buttons
+  display: flex;
+  justify-content: flex-start;
+   
+
+  scrollbar-width: none; 
 }
 
 ion-segment-button {
   --color-checked: #28a745;
+  margin: 0 5px;  // Add spacing between buttons
+  min-width: 100px;  // Ensure buttons have a reasonable width for scrolling
+  white-space: normal;  // Allow text to wrap properly inside the button
 }
 
 ion-segment-button ion-label {
   color: #000;
   font-family: Inter;
   font-size: 10px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
@@ -188,4 +197,22 @@ ion-segment-button ion-label {
 .container {
   // width: 30vw;
   height: auto;
+}
+
+@media (min-width: 1024px) {
+  ion-segment {
+    justify-content: center;   /* Center buttons */
+    white-space: normal;       /* Allow wrapping on larger screens */
+    overflow-x: hidden;        /* Disable horizontal scrolling on larger screens */
+  }
+
+  ion-segment-button {
+    flex-grow: 1;              /* Make buttons take equal space */
+    min-width: 150px;          /* Ensure minimum width for segment buttons */
+    margin: 0 10px;            /* Spacing between buttons */
+  }
+
+  ion-segment-button ion-label {
+    font-size: 12px;           /* Increase font size for laptop view */
+  }
 }

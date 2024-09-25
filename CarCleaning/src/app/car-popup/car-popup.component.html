@@ -1,0 +1,75 @@
+<ion-content>
+  <ion-card class="popup-card">
+    <!-- Popup Header -->
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col>
+          <h2>Complete Cleanse Combo</h2>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button fill="clear" class="close-button" (click)="dismissPopup()">
+            <ion-icon name="close-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- Popup Image -->
+    <ion-img src="assets/banner.svg" class="popup-img"></ion-img>
+
+    <!-- Text Section -->
+    <ion-card-content>
+      <ion-text color="dark">
+        <h1>Complete Cleanse Combo</h1>
+        <p>Exterior Foam Wash<br>Interior Vacuuming & Polish<br>Underbody Cleaning</p>
+      </ion-text>
+
+      <!-- Bonus Button -->
+      <ion-button expand="block" class="bonus-button">Bonus Body Wax</ion-button>
+      
+      <!-- Rating Section -->
+      <ion-item lines="none">
+        <ion-icon name="star" slot="start"></ion-icon>
+        <ion-label>4.6 (35k+ bookings)</ion-label>
+      </ion-item>
+    </ion-card-content>
+
+    <!-- Price Section -->
+    <ion-item class="price-section" lines="none">
+      <ion-icon name="pricetag-outline" slot="start"></ion-icon>
+      <ion-label>
+        <b>$599</b> <span class="price-details">899 • 90 Mins</span>
+      </ion-label>
+    </ion-item>
+
+    <!-- Offer Section -->
+    <ion-grid class="offer-section">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="auto">
+          <ion-img src="assets/Frame.svg" class="offer-icon"></ion-img>
+          
+        </ion-col>
+        <ion-col>
+          <ion-text>
+            <b>₹100 OFF on First Booking</b><br>
+            <small>Use Code: CARWASH</small>
+          </ion-text>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-text color="success">1/4</ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- Description -->
+    <ion-card-content>
+      <h2>Complete Cleanse Combo</h2>
+      <p>A comprehensive doorstep car wash with exterior foam wash, power interior vacuuming, dashboard dressing and glass cleaning, tyre polish, underbody cleaning and exterior body wax.</p>
+    </ion-card-content>
+
+    <!-- Add Button -->
+    <ion-footer>
+      <ion-button expand="block" class="add-button">Add</ion-button>
+    </ion-footer>
+  </ion-card>
+</ion-content>
